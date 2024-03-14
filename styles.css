@@ -96,9 +96,17 @@
     font-size: 75px;
     line-height: 2em;
     justify-content: left;
-    margin-left: 1em;
-    margin-top: 2em;
+
+    margin-top: 1em;
     color: #FF1D25;
+}
+#ctadonatehome {
+    font-size: 75px;
+    line-height: 2em;
+    justify-content: left;
+    margin-top: 1em;
+    color: #FF1D25;
+    text-decoration: none;
 }
 
 #h1-div {
