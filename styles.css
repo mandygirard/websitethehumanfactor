@@ -160,6 +160,13 @@ footer {
     color: white;
 }
 
+#instagramlink {
+    background-color:#333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    color: white; 
+}
+
 /* about */
 
 #header2 {
