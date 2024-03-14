@@ -1,0 +1,343 @@
+/* Step 2: Import the Reset */
+@import url(./styles/reset.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Indie+Flower&family=Josefin+Slab:wght@200&family=Montserrat+Alternates:wght@200&family=Quicksand&family=Raleway:wght@100&family=Satisfy&family=Unbounded:wght@300&family=Zen+Dots&display=swap');
+
+
+/*index*/
+
+#header {
+    background-image: url(./images/piechart.png); /* image from unsplash - https://unsplash.com/@botanicalnature */
+    background-size: cover;
+    background-position:fill;
+    height: 1000px;
+    width: auto;
+    background-repeat: no-repeat;
+    
+     
+    
+}
+
+
+
+
+
+/* Main Navigation */
+#mobile-view-menu {
+    display: none;
+}
+
+#main-navbar {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 999;
+    font-size: 1.2em;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#brand {
+    width: 70px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#pages-menu, #auth-menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#main-navbar a:not(#brand a), #main-navbar .collapse {
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#main-navbar a:not(#brand a):hover, #main-navbar .collapse:hover {
+    color: white;
+    background-color: #333;
+}
+
+.collapse {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.collapse + ul {
+    position: absolute;
+    z-index: 1;
+    top: -9999px;
+    background-color: #333;
+}
+
+#main-navbar > .pages-menu-container > #pages-menu > li > .collapse + ul > li > a {
+    color: #fff;
+}
+
+#main-navbar > .pages-menu-container > #pages-menu > li > .collapse + ul > li > a:hover {
+    background-color: #FF1D25;
+    color: #333;
+}
+
+#header-call-to-action {
+    font-size: 75px;
+    line-height: 2em;
+    justify-content: left;
+    margin-left: 1em;
+    margin-top: 2em;
+    color: #FF1D25;
+}
+
+#h1-div {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 65px;
+    background-color: #333;
+    margin-bottom: 1em;
+    
+}
+
+#main-main {
+    height: 300px;
+    background-color: #333;
+    line-height: 3em;
+    justify-content: center;
+}
+
+#main-h2 {
+    font-family: 'satisfy', cursive;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    
+   
+}
+
+#main-p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    
+}
+/* this is the bottom of page call to action. */
+#contact-link {
+color: #FF1D25;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 15px; /*come back to this*/
+
+justify-content: center;
+display: flex;
+
+}
+
+#contact-link:hover{
+font-size: 30px;  
+}
+
+
+footer {
+    background-color:#333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+/* about */
+
+#header2 {
+    background-image: url(./b&w\ seeded\ euc\ shutterstock_756439999.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 300px;
+    width: auto;
+}
+
+#about-h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #008080;
+    font-size: 65px;
+    padding-top: 200px;
+}
+
+#about-main {
+    background-color: #c5c5c5;
+   
+    }
+
+#me-image {
+    width: 500px;
+    float: left;
+
+margin-right: 20px;
+}
+
+#main-div  {
+    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    overflow: hidden;
+    
+}
+#about-h2{
+   font-family: 'Unbounded', cursive;
+    font-size: 50px; 
+    padding: 1em;  
+}
+
+.about-paragraph {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff7a59;
+    font-size: 25px; 
+    padding: 1em;  
+}
+
+button {
+ 
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 2px 12px 8px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1;
+    transition: transform 200ms,background 200ms;
+    background: transparent;
+    color: #008080;
+    box-shadow: 0 0 0 3px #008080 inset;
+    margin-left: 40%;
+    
+}
+    button:hover{
+        transform: translateY(-2px);
+    }
+
+    /* contact me */
+
+    #contact-h1div {
+     background-color: #c5c5c5;
+    }
+
+    #contact-h1div > h1 {
+display: flex;
+align-items: center;
+justify-content:center;
+padding: 1em;
+font-size: 50px;
+color: #008080;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #carnation-img {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 20px;
+    }
+
+    #contact-div  {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+    }
+
+    #contact-main {
+        background-color: #c5c5c5;
+    }
+    .socialnav-a {
+        line-height: 60px;
+        border: 3px solid #ff7a59;
+       
+
+    }
+
+    .socialnav-a:hover {
+        border: 3px dotted #ff7a59;
+        color: #ff7a59;
+        background: #fff;
+    }
+
+    
+
+
+    form {
+        display: inline-block;
+        
+        
+        justify-content: space-around;
+        
+        border: 1px solid #008080;
+        
+        overflow: hidden;
+        line-height: 150%;
+        font-family: 'Secular One', sans-serif;
+        padding: 1em;
+    }
+
+    #flex-container {
+        display: flex;
+        align-items: center;
+justify-content:center;
+
+    }
+
+    #form-div-flexchild {
+        flex: 1;
+       
+    }
+
+
+    #p-flexchild-div {
+        margin-right: 25px;
+        color: #008080;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow: hidden;
+        line-height: 150%;
+        font-family: 'Secular One', sans-serif;
+        font-size: 40px;
+        padding: 1em;
+        max-width: 35%;
+        justify-content: space-around;
+    }
+
+  
+   
+    
+
+
+
+
+
+
+
