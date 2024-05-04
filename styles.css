@@ -253,7 +253,7 @@ background-color:#4281A4 ;
     margin-bottom: 2em;
    margin-top: 2em;
    background-position:fill;
-    background-image: url(./images/tilebackground.jpg);
+    background-image: url(./images/pawel-czerwinski-p80iCB-XpsU-unsplash.jpg)
 }
 #programs-header h2 {
     color: #E4DFDA;
@@ -335,4 +335,45 @@ aside li {
 
 #programs-body {
     background-color: #4281A4;
+}
+
+/*JOIN THE TEAM*/
+
+#join-main {
+    background-color: orange;
+}
+
+#join-h1{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: #E4DFDA;
+    width: 1600px;
+    font-size: 3.4em;
+    text-shadow: 1px 1px 1px black;
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-top: .5em;
+   background-position:fill;
+    background-image: url(./images/tilebackground.jpg);
+
+}
+
+#join-form {
+    display:inline-table;
+    justify-content: center;
+    padding: 2em;
+    font-size: 15pt;
+    margin-left: 33em;
+    
+}
+.required {
+    font-size: 10pt;
+    color: #FF1D25;
+}
+
+#join-content {
+    text-align: center;
+    font-size: 24px;
+    padding: 2em;
 }
