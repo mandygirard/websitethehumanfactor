@@ -1,5 +1,12 @@
 /* Step 2: Import the Reset */
 @import url(./styles/reset.css);
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Indie+Flower&family=Josefin+Slab:wght@200&family=Montserrat+Alternates:wght@200&family=Quicksand&family=Raleway:wght@100&family=Satisfy&family=Unbounded:wght@300&family=Zen+Dots&display=swap');
@@ -96,7 +103,7 @@
     font-size: 75px;
     line-height: 2em;
     justify-content: left;
-
+background-color:transparent;
     margin-top: 1em;
     color: #FF1D25;
 }
@@ -175,184 +182,157 @@ footer {
     color: white; 
 }
 
+
+
 /* about */
 
-#header2 {
-    background-image: url(./b&w\ seeded\ euc\ shutterstock_756439999.jpg);
-    background-size:cover;
-    background-position:center;
-    height: 300px;
-    width: auto;
-}
 
-#about-h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #008080;
-    font-size: 65px;
-    padding-top: 200px;
-}
+
+
+
+
 
 #about-main {
-    background-color: #c5c5c5;
-   
+    background-image: url(./images/woodpannelbackground.jpg);
+   background-size: cover;
     }
 
-#me-image {
-    width: 500px;
-    float: left;
+    #about-h1-div {
+        max-width: 1200px;
+       margin: 0 auto;
+       padding: 1em;
+       margin-bottom: 2em;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 2em; 
+       font-size:32pt;
+       color:#4d443b;
+      font-style: italic;
+     
+    }
+#about-p {
+    padding: 1em;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    font-size: 24pt;
+    justify-content: center;
+    color:#4d443b;
 
-margin-right: 20px;
 }
+     #about-img img {
+        width:500px;
+        height: 500px;
+        float: left;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
 
-#main-div  {
-    
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1px;
-    overflow: hidden;
-    
-}
-#about-h2{
-   font-family: 'Unbounded', cursive;
-    font-size: 50px; 
-    padding: 1em;  
-}
 
-.about-paragraph {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 25px;
-    line-height: 120%;
-}
+/*programs*/
 
-aside {
+#programs-header {
+background-color:#4281A4 ;
+    height: 200px;
     display: flex;
     justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ff7a59;
-    font-size: 25px; 
-    padding: 1em;  
+    align-items: center;
+    flex-direction: column;
+}
+#programs-header h1 {
+    justify-content: center;
+    display: flex;
+    color: #E4DFDA;
+    width: 1200px;
+    font-size: 3.4em;
+    text-shadow: 1px 1px 1px black;
+    padding: 1em;
+    margin-bottom: 2em;
+   margin-top: 2em;
+   background-position:fill;
+    background-image: url(./images/tilebackground.jpg);
+}
+#programs-header h2 {
+    color: #E4DFDA;
+    display: flex;
+    justify-content: center;
+    font-size: 2.1em;
+    text-shadow: 1px 1px 1px black;
 }
 
-button {
- 
-    outline: 0;
-    border: 0;
-    border-radius: 8px;
-    padding: 2px 12px 8px;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1;
-    transition: transform 200ms,background 200ms;
-    background: transparent;
-    color: #008080;
-    box-shadow: 0 0 0 3px #008080 inset;
-    margin-left: 40%;
+#programs-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em; 
+}
+
+#programs-content p {
+    line-height: 1.5em;
+    color: #4b4b4b;
+    font-size: 1.2em;
+}
+
+
+#programs-img {
+    
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 2em;
     
 }
-    button:hover{
-        transform: translateY(-2px);
-    }
 
-    /* contact me */
+#programs-img img {
+    width: 250px;
+}
 
-    #contact-h1div {
-     background-color: #c5c5c5;
-    }
+/* ASIDE */
+aside {
+    width: 30%;
+    background-color:#dcdde1 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;  
+}
 
-    #contact-h1div > h1 {
-display: flex;
-align-items: center;
-justify-content:center;
-padding: 1em;
-font-size: 50px;
-color: #008080;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+aside h2 {
+    font-size: 1.5em;
+    height: 75px;
+    padding: 1em;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+}
 
-    #carnation-img {
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 20px;
-    }
+aside ul {
+    list-style: none;
+    color: #4b4b4b;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
 
-    #contact-div  {
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-    }
+aside li:nth-child(odd) {
+    background-color: whitesmoke;
+}
 
-    #contact-main {
-        background-color: #c5c5c5;
-    }
-    .socialnav-a {
-        line-height: 60px;
-        border: 3px solid #ff7a59;
-       
+aside li {
+    padding: 1em;
+    border-bottom: 1px solid #fff;
+}
 
-    }
+#main-programs {
+    width: 65%;
+    margin-top: 50px;
+}
 
-    .socialnav-a:hover {
-        border: 3px dotted #ff7a59;
-        color: #ff7a59;
-        background: #fff;
-    }
-
-    
-
-
-    form {
-        display: inline-block;
-        
-        
-        justify-content: space-around;
-        
-        border: 1px solid #008080;
-        
-        overflow: hidden;
-        line-height: 150%;
-        font-family: 'Secular One', sans-serif;
-        padding: 1em;
-    }
-
-    #flex-container {
-        display: flex;
-        align-items: center;
-justify-content:center;
-
-    }
-
-    #form-div-flexchild {
-        flex: 1;
-       
-    }
-
-
-    #p-flexchild-div {
-        margin-right: 25px;
-        color: #008080;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        overflow: hidden;
-        line-height: 150%;
-        font-family: 'Secular One', sans-serif;
-        font-size: 40px;
-        padding: 1em;
-        max-width: 35%;
-        justify-content: space-around;
-    }
-
-  
-   
-    
-
-
-
-
-
-
-
+#programs-body {
+    background-color: #4281A4;
+}
